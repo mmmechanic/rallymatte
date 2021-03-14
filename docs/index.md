@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+# RallyMatte
 
-You can use the [editor on GitHub](https://github.com/mmmechanic/RallyMatte/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Jag har gjort den här appen i några väckor i qml och jag har lärt mig mycket på den tiden. Jag har te.x lärt mig mer om if satser och signaler. Den här appen skulle jag säga är av de änklare apparna man kan göra i qml. Men det finns förståss änklare appar som te.x kan vara klick test, att man ser hur många klick man kan få på en viss tid.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Jag gjorde min app i [felgo](https://felgo.com) som använder sig av qml vilket det finns för och nackdelar med.
 
-### Markdown
+RallyMatte är gjort för de som inte kan multiplikationstabellen. Så alltså är det en app där man tränar multiplikationstabellen.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+namnet RallyMatte kommer från en lärare jag haft i matte som  hon använde sig av. Vi hade en viss tid att svara på alla frågor. Men i appen så går ingenting på tid.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mmmechanic/RallyMatte/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## [RallyMatte Appen](https://github.com/mmmechanic/RallyMatte)

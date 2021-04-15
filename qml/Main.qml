@@ -27,12 +27,16 @@ App {
                     slumptal = Math.floor(Math.random()*8+1)
                     tabell = valdTabell
 
-                    tabelltext.text = qsTr("tabell: ") + valdTabell
-                    question.text = slumptal + ("*") + valdTabell + ("=")
+                    tabelltext.text = qsTr("tabell: ") + tabell
+                    question.text = slumptal + ("*") + tabell + ("=")
                 }
 
                 onBlandatPressed: {
+                    slumptal = Math.floor(Math.random()*8+1)
+                    tabell = kaffeLatte
+
                     tabelltext.text = qsTr("tabell: blandat")
+                    question.text = slumptal + ("*") + tabell + ("=")
                 }
             }
 

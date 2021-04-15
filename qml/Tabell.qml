@@ -6,7 +6,7 @@ Item {
 
     // signal indicating that a level has been selected
     signal tabellPressed(int valdTabell)
-    signal blandatPressed()
+    signal blandatPressed(int kaffeLatte)
 
     Column {
         id: column
@@ -71,7 +71,7 @@ Item {
         AppButton {
             id:blandat
             text: "blandat"
-            onClicked: blandatPressed()
+            onClicked: blandatPressed(Math.floor(Math.random()*8+1))
         }
 
     }

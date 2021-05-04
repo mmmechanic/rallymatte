@@ -1,17 +1,27 @@
 import QtQuick 2.0
 import Felgo 3.0
 
-Item {
-    id: tabell
+Rectangle {
+    id: root
 
     // signal indicating that a level has been selected
     signal tabellPressed(int valdTabell)
     signal blandatPressed(int kaffeLatte)
 
+    // Rectangle default property values
+    width: column.width
+    height: column.height
+    color: "darkred"
+    border.color: "black"
+
     Column {
         id: column
-        width: 100
-        height: 400
+
+        AppText {
+            text: "Tabell"
+            color: "white"
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
 
         AppButton {
             id: tabell1
@@ -23,7 +33,6 @@ Item {
             id: tabell2
             text: "2"
             onClicked: tabellPressed(2)
-
         }
 
         AppButton {
@@ -76,3 +85,4 @@ Item {
 
     }
 }
+

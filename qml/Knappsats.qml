@@ -1,22 +1,29 @@
 import QtQuick 2.0
 import Felgo 3.0
 
-Item {
-    id: knappsats
+Rectangle {
+    id: root
 
+    // Knapsats properties
     property int index
     property int svar
     property int ental
     property int tiotal
 
+    // Knappsats signals
     signal knappPressed(int knapp)
     signal backPressed()
     signal okPressed()
 
+    // Knapsats default property values
+    width: grid.width
+    height: grid.height
+    color: "#1cb740"
+    border.color: "black"
+
     Grid {
         id: grid
-        width: 400
-        height: 400
+
         rows: 4
         columns: 3
 

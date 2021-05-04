@@ -9,8 +9,6 @@ App {
     //  * Add plugins to monetize, analyze & improve your apps (available with the Pro Licenses)
     //licenseKey: "<generate one from https://felgo.com/licenseKey>"
 
-
-
     NavigationStack {
 
         Page {
@@ -22,6 +20,13 @@ App {
 
                 property int slumptal
                 property int tabell
+
+                anchors.left: parent.left
+                anchors.leftMargin: 10
+                anchors.top: parent.top
+                anchors.topMargin: 10
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 10
 
                 onTabellPressed: {
                     slumptal = Math.floor(Math.random()*8+1)
@@ -40,10 +45,61 @@ App {
                 }
             }
 
+
+            Rectangle {
+                id: svarsruta
+
+                color: "yellow"
+                border.color: "black"
+                width: column.width
+                height: column.height
+
+                anchors.left: multiplikationsTabell.right
+                anchors.leftMargin: 10
+                anchors.top: parent.top
+                anchors.topMargin: 10
+                anchors.right: parent.right
+                anchors.rightMargin: 10
+
+                Column {
+                    id: column
+
+                    spacing: 10
+
+                    AppText {
+                        id: tabelltext
+                        text: qsTr("tabell: ")
+
+                    }
+
+                    AppText {
+                        id: question
+                        text: qsTr("fråga")
+
+                    }
+
+                    AppText {
+                        id: svarText
+                        text: qsTr("svar")
+
+                    }
+
+                    AppText {
+                        id: yesnoText
+                        text: ("...")
+                    }
+                }
+            }
+
             Knappsats {
                 id: knappsats
-                x: 100
-                y: 250
+
+                anchors.left: multiplikationsTabell.right
+                anchors.leftMargin: 10
+                anchors.bottom: reklamruta.top
+                anchors.bottomMargin: 10
+                anchors.right: parent.right
+                anchors.rightMargin: 10
 
                 property variant lista: [0,0]
                 index: 2
@@ -92,52 +148,29 @@ App {
 
             }
 
+            Rectangle {
 
-            AppText {
-                id: tabelltext
-                x: 250
-                text: qsTr("tabell: ")
+                id: reklamruta
 
+                color: "purple"
+                border.color: "black"
+                width: 100
+                height: 100
+
+                anchors.left: multiplikationsTabell.right
+                anchors.leftMargin: 10
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 10
+                anchors.right: parent.right
+                anchors.rightMargin: 10
+
+                Image {
+                    id: reklambild
+                    source: "../assets/rallymatte_logo.png"
+                    anchors.centerIn: parent
+                    scale: 0.2
+                }
             }
-
-            AppText {
-                id: question
-                x: 250
-                y: 100
-                text: qsTr("fråga")
-
-            }
-
-            AppText {
-                id: svarText
-                x: 250
-                y: 200
-                text: qsTr("svar")
-
-            }
-
-            AppText {
-                id: yesnoText
-                x: 200
-                y: 550
-                text: ("...")
-            }
-
-            /*Image {
-                source: "../assets/felgo-logo.png"
-                anchors.centerIn: parent
-            }*/
         }
-
     }
-
-
 }
-
-
-
-/*##^##
-Designer {
-    D{i:0;autoSize:true;height:480;width:640}
-}
-##^##*/

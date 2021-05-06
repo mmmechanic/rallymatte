@@ -1,4 +1,9 @@
+theme: jekyll-theme-leap-day
+
 header_pages:
   - support.md
 
-theme: jekyll-theme-leap-day
+title: [RallyMatte]
+description: [Lätt att lära multiplikationstabellen]
+
+show_downloads: ["true"]

@@ -4,10 +4,10 @@ Här hittar du informatin om hur du använder RallyMatte.
 * Välj en tabell att träna på
 * svara på frågan
 * tryck ok när du är klar
-* vid rtt svar får du en ny fråga
-* vid fel svar får du föröka igen
+* vid rät svar får du en ny fråga
+* vid fel svar får du försöka igen
 
-## BEhöver du mera hjälp ?
+## Behöver du mera hjälp ?
 Skicka ett meddelande så försöker jag hjällpa till
 
 <form
@@ -17,14 +17,16 @@ Skicka ett meddelande så försöker jag hjällpa till
   <label>
     Your email:
     <input type="email" name="_replyto">
-  </label>
+  </label><br>
   <label>
     Your Name:
     <textarea name="message"></textarea>
-  </label>
+  </label><br>
   <label>
     Your message:
     <textarea name="message"></textarea>
-  </label>
+  </label><br>
   <button type="submit">Send</button>
 </form>
+
+[back](https://mmmechanic.github.io/rallymatte)

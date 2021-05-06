@@ -49,7 +49,20 @@ App {
             Rectangle {
                 id: svarsruta
 
-                color: "yellow"
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.00;
+                        color: "#0b0a3a";
+                    }
+                    GradientStop {
+                        position: 0.51;
+                        color: "#ffffff";
+                    }
+                    GradientStop {
+                        position: 0.99;
+                        color: "#ca1414";
+                    }
+                }
                 border.color: "black"
                 width: column.width
                 height: column.height
@@ -86,7 +99,8 @@ App {
 
                     AppText {
                         id: yesnoText
-                        text: ("...")
+                        text: ("välj tabell! ")
+                        color: ("black")
                     }
                 }
             }
@@ -152,7 +166,20 @@ App {
 
                 id: reklamruta
 
-                color: "purple"
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.00;
+                        color: "#0b0a3a";
+                    }
+                    GradientStop {
+                        position: 0.51;
+                        color: "#ffffff";
+                    }
+                    GradientStop {
+                        position: 0.99;
+                        color: "#ca1414";
+                    }
+                }
                 border.color: "black"
                 width: 100
                 height: 100
@@ -168,7 +195,7 @@ App {
                     id: reklambild
                     source: "../assets/rallymatte_logo.png"
                     anchors.centerIn: parent
-                    scale: 0.2
+                    scale: 0.05
                 }
             }
         }

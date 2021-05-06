@@ -18,7 +18,20 @@ Rectangle {
     // Knapsats default property values
     width: grid.width
     height: grid.height
-    color: "#1cb740"
+    gradient: Gradient {
+        GradientStop {
+            position: 0.00;
+            color: "#0b0a3a";
+        }
+        GradientStop {
+            position: 0.51;
+            color: "#ffffff";
+        }
+        GradientStop {
+            position: 0.99;
+            color: "#ca1414";
+        }
+    }
     border.color: "black"
 
     Grid {

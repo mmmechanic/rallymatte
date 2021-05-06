@@ -11,7 +11,20 @@ Rectangle {
     // Rectangle default property values
     width: column.width
     height: column.height
-    color: "darkred"
+    gradient: Gradient {
+        GradientStop {
+            position: 0.00;
+            color: "#0b0a3a";
+        }
+        GradientStop {
+            position: 0.51;
+            color: "#ffffff";
+        }
+        GradientStop {
+            position: 0.99;
+            color: "#ca1414";
+        }
+    }
     border.color: "black"
 
     Column {

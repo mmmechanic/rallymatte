@@ -9,5 +9,10 @@ RallyMatte är gjort för de som inte kan multiplikationstabellen. Så alltså �
 namnet RallyMatte kommer från en lärare jag haft i matte som  hon använde sig av. Vi hade en viss tid att svara på alla frågor. Men i appen så går ingenting på tid.
 
 
+### Ladda ner programmet
+[RallyMatte Appen](https://github.com/mmmechanic/rallymatte/releases)
 
-## [RallyMatte Appen](https://github.com/mmmechanic/RallyMatte)
+
+### Support
+Har du problem med appen? sSkicka då ett meddelande på supportsidan
+[här](https://mmmechanic.github.io/rallymatte/support)

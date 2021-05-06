@@ -1,1 +1,4 @@
+header_pages:
+  - support.md
+
 theme: jekyll-theme-leap-day

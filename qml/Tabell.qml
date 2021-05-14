@@ -6,7 +6,7 @@ Rectangle {
 
     // signal indicating that a level has been selected
     signal tabellPressed(int valdTabell)
-    signal blandatPressed(int kaffeLatte)
+    signal blandatPressed()
 
     // Rectangle default property values
     width: column.width
@@ -93,7 +93,7 @@ Rectangle {
         AppButton {
             id:blandat
             text: "blandat"
-            onClicked: blandatPressed(Math.floor(Math.random()*8+1))
+            onClicked: blandatPressed()
         }
 
     }

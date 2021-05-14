@@ -20,6 +20,7 @@ App {
 
                 property int slumptal
                 property int tabell
+                property bool is_shaked
 
                 anchors.left: parent.left
                 anchors.leftMargin: 10
@@ -31,6 +32,7 @@ App {
                 onTabellPressed: {
                     slumptal = Math.floor(Math.random()*8+1)
                     tabell = valdTabell
+                    is_shaked = false
 
                     tabelltext.text = qsTr("tabell: ") + tabell
                     question.text = slumptal + ("*") + tabell + ("=")
@@ -38,7 +40,8 @@ App {
 
                 onBlandatPressed: {
                     slumptal = Math.floor(Math.random()*8+1)
-                    tabell = kaffeLatte
+                    tabell = Math.floor(Math.random()*8+1)
+                    is_shaked = true
 
                     tabelltext.text = qsTr("tabell: blandat")
                     question.text = slumptal + ("*") + tabell + ("=")
@@ -147,7 +150,12 @@ App {
                     if( svar == multiplikationsTabell.slumptal*multiplikationsTabell.tabell){
                         yesnoText.text = ("du har rätt")
                         yesnoText.color = "green"
-                        multiplikationsTabell.tabellPressed(multiplikationsTabell.tabell)
+                        if( multiplikationsTabell.is_shaked == true ){
+                            multiplikationsTabell.blandatPressed()
+                        }else{
+                            multiplikationsTabell.tabellPressed(multiplikationsTabell.tabell)
+                        }
+
                         backPressed()
 
 
